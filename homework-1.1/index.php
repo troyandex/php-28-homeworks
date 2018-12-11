@@ -14,18 +14,21 @@
     $answer = '*';
     $reserve = '*';
     
-    do {
-        if ( $a > $x ) {
-            $answer = 'НЕ входит';
-        } elseif ( $a == $x ) {
-            $answer = 'входит';
-        } else {
-            $reserve = $a;
-            $a += $b;
-            $b = $reserve;
-            $answer = 'НЕ входит';
-        }
-    } while ( $a < $x );
+    if ( $x != NULL) {
+        do {
+            if ( $a > $x ) {
+                $answer = 'НЕ входит';
+                break;
+            } elseif ( $a == $x ) {
+                $answer = 'входит';
+                break;
+            } else {
+                $reserve = $a;
+                $a += $b;
+                $b = $reserve;
+            }
+        } while ( $answer == NULL );
+    }
 ?>
 
 <!DOCTYPE html>

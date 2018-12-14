@@ -8,7 +8,12 @@
     $city = 'Ижевск';
     $about = 'краткий текст о себе';
     // additional task
-    $x = $_GET['x'];
+    if (!empty($_GET['x'])) {
+        $x = $_GET['x'];
+    } else {
+        $x = NULL;
+    }
+
     $a = 1;
     $b = 1;
     $answer = NULL;

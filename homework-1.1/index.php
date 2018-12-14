@@ -65,11 +65,6 @@
     </form>
 
     <p>Число <?php echo $x . ' ' .  $answer  ?> в числовой ряд Фибоначи</p>
-    x = <?php echo $x  ?>
-    a = <?php echo $a  ?>
-    b = <?php echo $b  ?>
-    r = <?php echo $reserve  ?>
-    ans = <?php echo $answer  ?>
 
 </body>
 </html>

@@ -11,7 +11,7 @@
     $x = $_GET['x'];
     $a = 1;
     $b = 1;
-    $answer = '*';
+    $answer = NULL;
     $reserve = '*';
     
     if ( $x != NULL) {

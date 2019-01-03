@@ -94,7 +94,7 @@ $questions = $test['questions']; // масив из вопросов с отве
             if (count($_POST) > 0) {
                 if ($post_true === $result_true && $post_false === 0) {
                     echo '<h4>Результат: Правильно!</h4>';
-                }elseif ($post_true > 0 && $post_false <> 0) {
+                }elseif ($post_true > 0) {
                     echo '<h4>Результат: Почти угадали (попробуйте еще)</h4>';
                 }else{
                     echo '<h4>Результат: Совсем не то</h4>';

@@ -2,8 +2,12 @@
 require_once 'core.php';
 if (!isAuthorized())
 {
-    location('index');
-    //header('HTTP/1.1 403 incorrect user');
+    header('HTTP/1.1 403 incorrect user');
+    echo "<h1>403 Incorrect user</h1>";
+    echo '<h2>Wait 5 seconds to return to the main menu, or click <a href="index.php">here</a></h2>';
+    echo '<h2>Подождите 5 секунд для того чтобы вернуться в главное меню, либо нажмите <a href="index.php">сюда</a></h2>';
+    header('refresh:5; url=index.php');
+    die;
 }
 
 
